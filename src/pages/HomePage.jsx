@@ -4,33 +4,35 @@ import Navbar from "../components/Navbar";
 import Bio from "../components/Bio";
 import ContactInfo from "../components/ContactInfo";
 import bannerImg from "../assets/Banner.png";
+import Line from "../components/Line";
 function HomePage() {
   return (
-    <div className="grid grid-cols-12">
+    <div>
+      {/* hidden main header */}
       <div className="px-5 col-span-12 lg:hidden">
         <MainHeader />
-        <div className="bg-white pb-1 "></div>
+        <Line />
       </div>
       <Navbar />
-      <main className="col-span-12 grid grid-cols-12 gap-6">
+      <main className="flex gap-5">
         {/* side bar */}
-        <div className="col-span-12 lg:col-span-4 ">
+        <aside className="lg:w-1/3">
           <div className="hidden w-full lg:block">
           <MainHeader />
           </div>
           <div className="px-5 pb-5">
-          <div className="bg-white pb-1 mb-4"></div>
+          <Line />
           <Bio />
           <ContactInfo />
           </div>
-        </div>
+        </aside>
 
         {/* banner image */}
-        <div className="lg:col-span-8 justify-self-center hidden lg:block">
+        <div className="hidden lg:block flex-grow max-w-5xl ml-auto">
           <img
             alt="Woman in shallow water"
             src={bannerImg}
-            className="w-full max-w-5xl"
+            className="w-full"
           />
         </div>
       </main>
