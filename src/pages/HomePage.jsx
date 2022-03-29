@@ -7,14 +7,14 @@ import bannerImg from "../assets/Banner.png";
 function HomePage() {
   return (
     <div className="grid grid-cols-12">
-      <div className="col-span-12 lg:hidden">
+      <div className="px-5 col-span-12 lg:hidden">
         <MainHeader />
         <div className="bg-white pb-1 "></div>
       </div>
       <Navbar />
       <main className="col-span-12 grid grid-cols-12 gap-6">
         {/* side bar */}
-        <div className="col-span-12 lg:col-span-3">
+        <div className="col-span-12 lg:col-span-4 ">
           <div className="hidden w-full lg:block">
           <MainHeader />
           </div>
@@ -26,11 +26,11 @@ function HomePage() {
         </div>
 
         {/* banner image */}
-        <div className="col-span-9 justify-self-center hidden lg:block">
+        <div className="lg:col-span-8 justify-self-center hidden lg:block">
           <img
             alt="Woman in shallow water"
             src={bannerImg}
-            className="w-full h-auto max-w-5xl"
+            className="w-full max-w-5xl"
           />
         </div>
       </main>
