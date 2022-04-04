@@ -1,33 +1,21 @@
-import React from 'react'
-import {Link} from "react-router-dom"
-import Navbar from '../components/Navbar'
+import React, {useState} from "react";
+import Footer from "../components/Footer.jsx";
+import {useParams} from "react-router-dom"
 function GalleryPage() {
-  return (
-    <div>
-      <Navbar />
-      <main>
+  const [gallery,setGallery] = useState([{
+    url: "",
+    title: ""
+  }])
+  const params = useParams()
 
+  return (
+    <>
+      <main className="py-5">
+       <h2 className="text-center text-2xl uppercase">{params.gallery}</h2>
       </main>
-      <footer className='flex flex-col lg:flex-row justify-between'>  
-      <div className="mb-2">
-        <h2>Email</h2>
-        <a href="mailto:stevenraymartinez496@gmail.com">
-          stevenraymartinez496@gmail.com{" "}
-        </a>
-      </div>
-      <div>
-        <Link to="/"><h1 className='text-3xl uppercase'>CINEPHILEBAKER</h1></Link>
-      </div>
-      <div className="mb-2">
-        <h2>Instagram</h2>
-        <a href="https://www.instagram.com/cinephilebaker/">
-          stevenraymartinez496@gmail.com{" "}
-        </a>
-      </div>
-  
-      </footer>
-    </div>
-  )
+      <Footer />
+    </>
+  );
 }
 
-export default GalleryPage
+export default GalleryPage;

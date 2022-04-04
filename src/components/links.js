@@ -6,19 +6,19 @@ const links = [
   {
     name: "Portraits",
     image: portraitsImg,
-    path: "/portraits",
+    path: "portraits",
     alt: "Woman against wall",
   },
   {
     name: "Somewhere in Mathis",
     image: somewhereInMathisImg,
-    path: "/somewhere-in-mathis",
+    path: "somewhere-in-mathis",
     alt: "Black and white photo of field with a few wind generators",
   },
   {
     name: "Audio / Visual",
     image: audioVisualImg,
-    path: "/audio-visual",
+    path: "audio-visual",
     alt: "Man with red harness laying in shallow water",
   },
 ];
