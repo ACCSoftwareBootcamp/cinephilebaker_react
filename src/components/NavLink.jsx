@@ -3,7 +3,7 @@ import React from "react";
 function NavLink({ image, alt, name, path }) {
   
   const ImageLink = () => (
-    <a href={path}>
+    <a href={path} className="hidden md:block">
       <img src={image} alt={alt} className="w-full mb-2" />
     </a>
   );

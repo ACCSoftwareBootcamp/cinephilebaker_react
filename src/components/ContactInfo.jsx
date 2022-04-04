@@ -12,7 +12,7 @@ function ContactInfo() {
       <div className="mb-2">
         <h2>Instagram</h2>
         <a href="https://www.instagram.com/cinephilebaker/">
-          stevenraymartinez496@gmail.com{" "}
+        cinephilebaker
         </a>
       </div>
     </address>
