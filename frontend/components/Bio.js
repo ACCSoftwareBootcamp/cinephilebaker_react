@@ -1,6 +1,6 @@
 import React from "react";
 
-function Bio() {
+function Bio(props) {
   return (
     <p className="text-justify pb-4 px-5 md:px-0">
       Steven resides in Austin, TX and explores storytelling and representation
@@ -12,6 +12,7 @@ function Bio() {
       desire is that you don't just see a portrait but rather a whole world you
       can visualize and a story you want to explore that goes beyond the
       photograph, and beyond reality.
+      {props.about}
     </p>
   );
 }
